@@ -1,0 +1,35 @@
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+
+    background-color: rgba(255, 255, 255, 0.702);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 5px 1px black;
+}
+
+.brand-name {
+    font-size: 25px;
+
+    color: rgb(141, 7, 7);
+}
+
+.nav-link {
+    padding: 15px 10px;
+
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background-color: rgba(141, 7, 7);
+    color: white;
+}

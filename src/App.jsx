@@ -7,6 +7,7 @@ import Menu from './Pages/Menu'
 import ContactPage from './Pages/ContactPage'
 import ReviewPage from './Pages/ReviewPage'
 import NavBar from './Components/NavBar'
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -14,14 +15,19 @@ function App() {
 
   return (
     <BrowserRouter>
-    <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/menu' element={<Menu />}/>
-        <Route path='/contact-us' element={<ContactPage />}/>
-        <Route path='/review-us' element={<ReviewPage />}/>
-      </Routes>
+    
+      <NavBar />
+        
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/menu' element={<Menu />}/>
+          <Route path='/contact-us' element={<ContactPage />}/>
+          <Route path='/review-us' element={<ReviewPage />}/>
+        </Routes>
+
+      <Footer />
+
     </BrowserRouter>
   )
 }
