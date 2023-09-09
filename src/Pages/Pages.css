@@ -6,12 +6,68 @@
 }
 
 .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.89);
 }
 
-.hero-img {
-    width: 450px;
+.hero-img, .hero-txt {
+    width: 45%;
 }
 
+.hero-txt > h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.hero-txt > p {
+    color: white;
+    margin: 20px 0;     
+}
+
+.hero-txt > button {
+    padding: 18px 40px;
+    font-size: 17px;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(141, 7, 7);
+    border-radius: 2px;
+
+    color: white;
+    background-color: rgb(141, 7, 7);
+    transition: 200ms;
+}
+
+.hero-txt > button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(141, 7, 7);
+}
+
+.hero-img > img {
+    width: 90%;
+    float: right;
+    animation-name: hero-img-animation;
+    animation-duration: 20s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+
+.home-cards {
+    width: 100%;
+    height: 400px;
+    background-color: #e9e9e9;
+}
+
+@keyframes hero-img-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
