@@ -5,6 +5,7 @@ import { GiForkKnifeSpoon } from 'react-icons/gi';
 import { FaCartPlus } from 'react-icons/fa';
 import { RiCustomerService2Fill } from 'react-icons/ri';
 import ServicesCard from '../Components/ServicesCard'
+import About from './About';
 
 export default function Home() {
 
@@ -46,6 +47,10 @@ export default function Home() {
         </div>
       </div>
 
+      <div className='services-heading'>
+        <p>Our Services</p>
+        <div></div>
+      </div>
       <div className='home-cards'>
         {
           cardsData.map((val, key) => (
@@ -58,6 +63,8 @@ export default function Home() {
           ))
         }
       </div>
+
+        <About/>
     </>
   )
 }

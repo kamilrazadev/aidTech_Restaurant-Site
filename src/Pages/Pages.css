@@ -1,3 +1,4 @@
+/* Home Section Styling */
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -64,7 +65,30 @@
     align-items: center;
 
     width: 100%;
-    height: 400px;
+    padding: 30px 0;
+}
+
+.services-heading {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.services-heading > p {
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(35, 35, 35);
+}
+
+.services-heading > div {
+    width: 40px;
+    height: 2px;
+    margin-left: 7px;
+    border-radius: 3px;
+
+    background-color: rgb(141, 7, 7);
 }
 
 @keyframes hero-img-animation {
@@ -74,4 +98,10 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+/* About Section Styling */
+
+.about-section {
+    
 }
