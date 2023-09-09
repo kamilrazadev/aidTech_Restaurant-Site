@@ -12,6 +12,8 @@ nav {
     background-color: rgba(165, 165, 165, 0.221);
     backdrop-filter: blur(2px);
     box-shadow: 0 0 5px 1px black;
+
+    z-index: 2;
 }
 
 .brand-name {
@@ -34,5 +36,48 @@ nav {
 
 .nav-link:hover {
     background-color: rgba(141, 7, 7);
+    color: white;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 260px;
+    height: 270px;
+    padding: 40px 20px;
+
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 400ms;
+}
+
+.services-card-heading {
+    font-size: 20px;
+    margin: 15px 0;
+    transition: 400ms;
+}
+
+.services-card-txt {
+    color: rgb(87, 87, 87);
+    transition: 400ms;
+}
+
+.services-card-icon {
+    color: rgb(141, 7, 7);
+    font-size: 50px;
+    transition: 400ms;
+}
+
+.services-card:hover {
+    background-color: rgb(167, 16, 16);
+}
+
+.services-card:hover .services-card-icon {
+    color: white;
+}
+
+.services-card:hover .services-card-txt,.services-card:hover .services-card-heading {
     color: white;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import heroImg from '../assets/hero.png'
+import ServicesCard from '../Components/ServicesCard'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       </div>
 
       <div className='home-cards'>
-
+        <ServicesCard/>
       </div>
     </>
   )
