@@ -44,10 +44,11 @@ nav {
     flex-direction: column;
     justify-content: center;
 
-    width: 260px;
+    width: 20%;
     height: 270px;
     padding: 40px 25px;
     border-radius: 3px;
+    margin: 30px 0;
 
     background-color: #fff;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.183);
@@ -82,4 +83,45 @@ nav {
 
 .services-card:hover .services-card-txt,.services-card:hover .services-card-heading {
     color: white;
+}
+
+@media (max-width: 1030px) {
+    .services-card {
+        width: 45%;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 600px) {
+    .services-card {
+        width: 90%;
+    }
+}
+/* @media (max-width: 685px) {
+    .services-card {
+        width: 500px;
+    }
+} */
+
+/* About Section Styling */
+
+.about-card {
+    display: flex;
+    align-items: center;
+
+    width: 45%;
+    height: 60px;
+
+    border-left: 5px solid rgb(141, 7, 7);
+    color: rgb(87, 87, 87);
+}
+
+.about-card > h1 {
+    font-size: 50px;
+    margin: 0 20px;
+    color: rgb(141, 7, 7);
+}
+
+.about-card-bold-txt {
+    font-weight: bold;
+    color: black;
 }

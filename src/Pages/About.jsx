@@ -24,7 +24,7 @@ export default function About() {
         </div>
       </div>
 
-      <div>
+      <div className='about-content'>
       <div className='section-heading about-heading'>
         <p>About Us</p>
         <div></div>
@@ -33,8 +33,12 @@ export default function About() {
         <p className='about-txt'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
         <p className='about-txt'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
 
-        <AboutCard heading='15' txtPrimary='Years of' txtSecondary='EXPERIENCE' />
-        <AboutCard heading='50' txtPrimary='Popular' txtSecondary='MASTER CHEFS' />
+        <div className='about-cards-div'>
+          <AboutCard heading='15' txtPrimary='Years of' txtSecondary='EXPERIENCE' />
+          <AboutCard heading='50' txtPrimary='Popular' txtSecondary='MASTER CHEFS' />
+        </div>
+
+        <button className='btn readmore-btn'>READ MORE</button>
       </div>
     </div>
   )

@@ -2,10 +2,12 @@ import React from 'react'
 
 export default function (props) {
   return (
-    <div className='about-card' data-aos="fade-up">
+    <div className='about-card'>
         <h1>{props.heading}</h1>        
-        <p>{props.txtPrimary}</p>
-        <p>{props.txtSecondary}</p>
+        <div>
+          <p>{props.txtPrimary}</p>
+          <p className='about-card-bold-txt'>{props.txtSecondary}</p>
+        </div>
     </div>
   )
 }
