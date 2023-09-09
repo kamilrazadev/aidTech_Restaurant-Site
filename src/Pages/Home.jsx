@@ -1,8 +1,36 @@
 import React from 'react'
 import heroImg from '../assets/hero.png'
+import { LuChefHat } from 'react-icons/lu';
+import { GiForkKnifeSpoon } from 'react-icons/gi';
+import { FaCartPlus } from 'react-icons/fa';
+import { RiCustomerService2Fill } from 'react-icons/ri';
 import ServicesCard from '../Components/ServicesCard'
 
 export default function Home() {
+
+  const cardsData = [
+    {
+      icon: <LuChefHat />,
+      heading: 'Master Chefs',
+      text: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam 1',
+    },
+    {
+      icon: <GiForkKnifeSpoon />,
+      heading: 'Quality Food',
+      text: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam 2',
+    },
+    {
+      icon: <FaCartPlus />,
+      heading: 'Online Order',
+      text: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam 3',
+    },
+    {
+      icon: <RiCustomerService2Fill />,
+      heading: '24/7 Service',
+      text: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam 4',
+    },
+  ];
+
   return (
     <>
       <div className='hero-section'>
@@ -19,7 +47,16 @@ export default function Home() {
       </div>
 
       <div className='home-cards'>
-        <ServicesCard/>
+        {
+          cardsData.map((val, key) => (
+            <ServicesCard
+              key={key}
+              icon={val.icon}
+              heading={val.heading} 
+              text={val.text}
+            />
+          ))
+        }
       </div>
     </>
   )
