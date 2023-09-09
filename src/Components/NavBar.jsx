@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <nav>
         <h3 className='brand-name'>FOODnFOODS</h3>
-        <div>
+        <div className='nav-links'>
             <Link className='nav-link' to='/'>Home</Link>
             <Link className='nav-link' to='/about'>About</Link>
             <Link className='nav-link' to='/menu'>Menu</Link>
