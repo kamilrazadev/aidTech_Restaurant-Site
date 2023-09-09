@@ -52,9 +52,9 @@
     width: 90%;
     float: right;
     animation-name: hero-img-animation;
-    animation-duration: 20s;
-    animation-delay: 0ms;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .home-cards {
