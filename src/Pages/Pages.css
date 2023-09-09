@@ -68,7 +68,7 @@
     padding: 30px 0;
 }
 
-.services-heading {
+.section-heading {
     display: flex;
     align-items: center;
 
@@ -76,13 +76,13 @@
     margin-left: 20px;
 }
 
-.services-heading > p {
+.section-heading > p {
     font-size: 20px;
     font-family: 'Pacifico', cursive;
-    color: rgb(35, 35, 35);
+    color: rgb(141, 7, 7);
 }
 
-.services-heading > div {
+.section-heading > div {
     width: 40px;
     height: 2px;
     margin-left: 7px;
@@ -103,5 +103,59 @@
 /* About Section Styling */
 
 .about-section {
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+.about-section > div {
+    width: 45%;
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 5px;
+}
+
+.images-div {
+    width: 45%;
+    height: 45%;
+
+    margin: 5px;
+}
+
+.about-img-1, .about-img-4{
+    width: 100%;
+}
+
+.about-img-2, .about-img-3 {
+    width: 80%;
+}
+
+.about-img-2 {
+    margin-top: 20%;
+}
+
+.about-img-3 {
+    margin-left: 20%;
+}
+
+.about-heading {
+    margin: 0;
+}
+
+.welcome-heading {
+    font-size: 35px;
+}
+
+.about-icon {
+    color: rgb(141, 7, 7);
+}
+
+.about-txt {
+    color: rgb(35, 35, 35);
+    margin: 20px 0;
 }

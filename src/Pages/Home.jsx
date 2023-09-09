@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='services-heading'>
+      <div className='section-heading'>
         <p>Our Services</p>
         <div></div>
       </div>
