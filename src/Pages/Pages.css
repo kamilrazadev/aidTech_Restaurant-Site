@@ -225,4 +225,7 @@
     .about-cards-div {
         flex-direction: column;
     }  
+    .about-section {
+        padding: 0 25px;
+    }
 }
