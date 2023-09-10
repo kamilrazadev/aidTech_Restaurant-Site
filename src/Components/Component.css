@@ -219,9 +219,31 @@ nav {
     border-radius: 25px 25px 0px 0px;
 
     background-color: rgb(141, 7, 7);
-    color: white;
+    color: rgb(237, 236, 236);
 }
 
+footer {
+    width: 100%;
+    height: 70px;
+    background-image: url(../assets/bg-hero.jpg);
+}
+
+.overlay-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: #000000c7;
+}
+
+.overlay-footer h3 {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
+}
 
 @media (max-width: 1030px) {
     .services-card {

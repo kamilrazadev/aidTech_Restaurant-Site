@@ -10,8 +10,9 @@ export default function NavBar() {
             <Link className='nav-link' to='/'>Home</Link>
             <Link className='nav-link' to='/about'>About</Link>
             <Link className='nav-link' to='/menu'>Menu</Link>
-            <Link className='nav-link' to='/contact-us'>Contact Us</Link>
-            <Link className='nav-link' to='/review-us'>Review Us</Link>
+            <Link className='nav-link' to='/team'>Our Team</Link>
+            {/* <Link className='nav-link' to='/contact-us'>Contact Us</Link> */}
+            {/* <Link className='nav-link' to='/review-us'>Review Us</Link> */}
         </div>
     </nav>
   )
