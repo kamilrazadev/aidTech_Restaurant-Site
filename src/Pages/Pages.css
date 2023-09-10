@@ -206,6 +206,16 @@
     align-items: center;
 }
 
+.chefs-card-contanier {
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
 
 @media (max-width: 880px) {
     .hero-section {

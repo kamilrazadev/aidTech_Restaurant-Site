@@ -85,23 +85,6 @@ nav {
     color: white;
 }
 
-@media (max-width: 1030px) {
-    .services-card {
-        width: 45%;
-        margin: 15px 0;
-    }
-}
-@media (max-width: 600px) {
-    .services-card {
-        width: 90%;
-    }
-}
-@media (max-width: 750px) {
-    .nav-links {
-        display: none;
-    }
-}
-
 /* About Components Section Styling */
 
 .about-card {
@@ -124,17 +107,6 @@ nav {
 .about-card-bold-txt {
     font-weight: bold;
     color: black;
-}
-
-@media (max-width: 510px) {
-    .about-card {
-        height: 50px;
-        width: auto;
-        margin: 7px 0;
-    }
-    .about-card > h1 {
-        font-size: 30px;
-    }
 }
 
 /* Menu Components Section Styling */
@@ -192,4 +164,89 @@ nav {
     font-style: italic;
     font-size: 15px;
     color: rgb(87, 87, 87);
+}
+
+/* Chefs Section */
+
+.chef-cards {
+    cursor: pointer;
+    height: 270px;
+    position: relative;
+    margin: 0 10px;
+    padding: 25px 30px;
+    padding-bottom: 0;
+    overflow: hidden;
+    border-radius: 3px;
+
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.412);
+    transition: 300ms;
+}
+
+.chef-cards:hover {
+    height: 320px;
+}
+
+.chef-img {
+    border-radius: 50%;
+    width: 180px;
+}
+
+.chef-desgn, .chef-name {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.chef-desgn {
+    color: rgb(141, 7, 7);
+}
+
+.chef-name {
+    color: rgb(87, 87, 87);
+    margin-bottom: 10px;
+}
+
+.social-acc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-acc > div {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 45px;
+    height: 60px;
+    border-radius: 25px 25px 0px 0px;
+
+    background-color: rgb(141, 7, 7);
+    color: white;
+}
+
+
+@media (max-width: 1030px) {
+    .services-card {
+        width: 45%;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 600px) {
+    .services-card {
+        width: 90%;
+    }
+}
+@media (max-width: 750px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 510px) {
+    .about-card {
+        height: 50px;
+        width: auto;
+        margin: 7px 0;
+    }
+    .about-card > h1 {
+        font-size: 30px;
+    }
 }
