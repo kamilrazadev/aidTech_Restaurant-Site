@@ -102,7 +102,7 @@ nav {
     }
 }
 
-/* About Section Styling */
+/* About Components Section Styling */
 
 .about-card {
     display: flex;
@@ -135,4 +135,37 @@ nav {
     .about-card > h1 {
         font-size: 30px;
     }
+}
+
+/* Menu Components Section Styling */
+
+.foodcategory-card {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin-right: 40px;
+}
+
+.foodcategory-icon {
+    font-size: 40px;
+    color: rgb(141, 7, 7);
+    margin-right: 20px;
+}
+
+.foodcategory-card h5 {
+    font-size: 17px;
+}
+
+.selected {
+    border-bottom: 2px solid rgb(141, 7, 7);
+}
+
+.food-item {
+    display: flex;
+}
+
+.food-info {
+    display: flex;
 }

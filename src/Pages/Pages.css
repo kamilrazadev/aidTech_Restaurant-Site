@@ -152,7 +152,7 @@
     margin: 0;
 }
 
-.welcome-heading {
+.main-heading {
     font-size: 35px;
 }
 
@@ -175,6 +175,14 @@
 .readmore-btn:hover {
     color: rgb(141, 7, 7);
 }
+
+/* Menu Section Styling */
+
+.foodcategory-card-div {
+    display: flex;
+    justify-content: center;
+}
+
 
 @media (max-width: 880px) {
     .hero-section {

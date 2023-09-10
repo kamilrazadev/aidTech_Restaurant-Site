@@ -6,6 +6,7 @@ import { FaCartPlus } from 'react-icons/fa';
 import { RiCustomerService2Fill } from 'react-icons/ri';
 import ServicesCard from '../Components/ServicesCard'
 import About from './About';
+import Menu from './Menu';
 
 export default function Home() {
 
@@ -65,7 +66,8 @@ export default function Home() {
         }
       </div>
 
-        <About/>
+        <About />
+        <Menu />
     </>
   )
 }

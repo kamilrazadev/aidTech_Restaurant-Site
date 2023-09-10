@@ -29,7 +29,7 @@ export default function About() {
         <p>About Us</p>
         <div></div>
       </div>
-        <h3 className='welcome-heading'>Welcome to <GiForkKnifeSpoon className='about-icon' />FoodnFood</h3>
+        <h3 className='main-heading'>Welcome to <GiForkKnifeSpoon className='about-icon' />FoodnFood</h3>
         <p className='about-txt'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
         <p className='about-txt'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
 
