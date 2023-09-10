@@ -9,6 +9,7 @@ import About from './About';
 
 export default function Home() {
 
+
   const cardsData = [
     {
       icon: <LuChefHat />,
@@ -36,9 +37,9 @@ export default function Home() {
     <>
       <div className='hero-section'>
         <div className='overlay'>
-          <div className='hero-txt'>
-            <h1>Enjoy Our <br/> Delicious Meal</h1>
-            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+          <div className='hero-txt' >
+            <h1 data-aos='fade-right'>Enjoy Our <br/> Delicious Meal</h1>
+            <p data-aos='fade-right' data-aos-delay='100'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
             <button className='btn'>Review Us</button>
           </div>
           <div className='hero-img'>

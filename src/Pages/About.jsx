@@ -11,16 +11,16 @@ export default function About() {
     <div className='about-section'>
       <div className='about-images'>
         <div className='images-div'>
-          <img src={about1img} className='about-img-1' />
+          <img src={about1img} className='about-img-1' data-aos='zoom-in' />
         </div>
         <div className='images-div'>
-          <img src={about2img} className='about-img-2' />
+          <img src={about2img} className='about-img-2' data-aos='zoom-in' data-aos-delay='200' />
         </div>
         <div className='images-div'>
-          <img src={about3img} className='about-img-3' />
+          <img src={about3img} className='about-img-3' data-aos='zoom-in' data-aos-delay='400' />
         </div>
         <div className='images-div' >
-          <img src={about4img} className='about-img-4' />
+          <img src={about4img} className='about-img-4' data-aos='zoom-in' data-aos-delay='600' />
         </div>
       </div>
 

@@ -185,9 +185,14 @@
         padding: 15px 0; 
     }
     .overlay > div {
-        width: 80%;
         padding: 15px 0; 
         text-align: center;
+    }
+    .hero-txt {
+        width: 90%;
+    }
+    .hero-img {
+        width: 80%;
     }
     .hero-img > img {
         width: 70%;

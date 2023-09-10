@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
@@ -8,10 +8,17 @@ import ContactPage from './Pages/ContactPage'
 import ReviewPage from './Pages/ReviewPage'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
 
   return (
     <BrowserRouter>
