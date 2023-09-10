@@ -166,6 +166,30 @@ nav {
     display: flex;
 }
 
+.food-item-container > div {
+    padding: 8px 0;
+}
+
 .food-info {
     display: flex;
+    justify-content: space-between;
+    
+    font-size: 18px;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.food-item-img {
+    margin-right: 20px; 
+    border-radius: 2px;  
+}
+
+.food-item-price {
+    color: rgb(141, 7, 7);
+}
+
+.food-item-disc {
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(87, 87, 87);
 }

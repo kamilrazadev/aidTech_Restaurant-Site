@@ -5,7 +5,6 @@ import { FaHamburger } from 'react-icons/fa';
 import { GiForkKnifeSpoon } from 'react-icons/gi';
 import FoodCategoryCard from '../Components/FoodCategoryCard'
 import FoodItem from '../Components/FoodItem';
-import FoodItemImg from '../assets/tikka-pizza.jpg'
 
 export default function Menu() {
 
@@ -17,9 +16,51 @@ export default function Menu() {
 
   const foodItems = [
     {
-      image: {FoodItemImg},
+      image: '../../public/images/menu-1.jpg',
+      title: 'Platter',
+      price: '190',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-2.jpg',
+      title: 'Fried Chicken',
+      price: '79',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-3.jpg',
+      title: 'Fajita Pizza',
+      price: '105',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-4.jpg',
+      title: 'Kababs',
+      price: '95',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-5.jpg',
+      title: 'Brakfast Deal',
+      price: '165',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-6.jpg',
+      title: 'Tikka Fries',
+      price: '55',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-7.jpg',
       title: 'Tikka Pizza',
       price: '115',
+      disc: 'Ipsum ipsum clita erat amet dolor justo diam'
+    },
+    {
+      image: '../../public/images/menu-8.jpg',
+      title: 'Chicken Tikka',
+      price: '125',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     }
   ]
@@ -43,13 +84,13 @@ export default function Menu() {
   ]
 
   return(
-    <div>
-      <div className='section-heading'>
+    <div className='menu-container'>
+      <div className='section-heading' data-aos='fade-up' >
         <div style={{marginRight: '5px'}}></div>
         <p>Food Menu</p>
         <div></div>
       </div>
-      <h3 className='main-heading'>Most Popular Food</h3>
+      <h3 className='main-heading' data-aos='fade-up'>Most Popular Food</h3>
       <div className='foodcategory-card-div'>
         {
           foodCategpries.map( (val, key) => ( 
@@ -66,12 +107,13 @@ export default function Menu() {
       </div>
       <div className='food-items'>
         {
-          foodItems.map( () => (
+          foodItems.map( (val, key) => (
           <FoodItem
-            image={FoodItemImg}
-            title='Tikka Pizza'
-            price='115'
-            disc='Ipsum ipsum clita erat amet dolor justo diam'
+            key={key}
+            image={val.image}
+            title={val.title}
+            price={val.price}
+            disc={val.disc}
           />
         ))
         }
