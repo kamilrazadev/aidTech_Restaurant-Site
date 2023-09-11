@@ -16,49 +16,49 @@ export default function Menu() {
 
   const foodItems = [
     {
-      image: '../../public/images/menu-1.jpg',
+      image: '/images/menu-1.jpg',
       title: 'Platter',
       price: '190',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-2.jpg',
+      image: '/images/menu-2.jpg',
       title: 'Fried Chicken',
       price: '79',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-3.jpg',
+      image: '/images/menu-3.jpg',
       title: 'Fajita Pizza',
       price: '105',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-4.jpg',
+      image: '/images/menu-4.jpg',
       title: 'Kababs',
       price: '95',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-5.jpg',
+      image: '/images/menu-5.jpg',
       title: 'Brakfast Deal',
       price: '165',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-6.jpg',
+      image: '/images/menu-6.jpg',
       title: 'Tikka Fries',
       price: '55',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-7.jpg',
+      image: '/images/menu-7.jpg',
       title: 'Tikka Pizza',
       price: '115',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'
     },
     {
-      image: '../../public/images/menu-8.jpg',
+      image: '/images/menu-8.jpg',
       title: 'Chicken Tikka',
       price: '125',
       disc: 'Ipsum ipsum clita erat amet dolor justo diam'

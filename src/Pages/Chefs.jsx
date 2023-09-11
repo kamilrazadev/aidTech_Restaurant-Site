@@ -5,22 +5,22 @@ export default function Chefs() {
 
   const chefsData = [
     {
-      image: '../../public/images/team-1.jpg',
+      image: '/images/team-1.jpg',
       name: "John Doe",
       desgn: "Head Chef"
     },
     {
-      image: '../../public/images/team-2.jpg',
+      image: '/images/team-2.jpg',
       name: "Trevor",
       desgn: "Jr Chef"
     },
     {
-      image: '../../public/images/team-3.jpg',
+      image: '/images/team-3.jpg',
       name: "Michel Decenta",
       desgn: "Desert Expert"
     },
     {
-      image: '../../public/images/team-4.jpg',
+      image: '/images/team-4.jpg',
       name: "Franklin",
       desgn: "Chinese Expert"
     }
