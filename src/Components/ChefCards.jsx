@@ -7,9 +7,9 @@ export default function ChefCards(props) {
             <h3 className='chef-desgn'>{props.desgn}</h3>
             <p className='chef-name'>{props.name}</p>
           <div className='social-acc'>
-            <div>I</div>
-            <div>F</div>
-            <div>T</div>
+            <div>{props.fbIcon}</div>
+            <div>{props.instaIcon}</div>
+            <div>{props.twitterIcon}</div>
           </div>
           <div className='over'></div>
     </div>

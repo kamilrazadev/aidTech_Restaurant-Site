@@ -208,6 +208,7 @@
 
 .chefs-card-contanier {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap; 
     overflow-x: auto;
@@ -231,6 +232,9 @@
     .food-items {
         grid-template-columns: 100%;        
     }    
+    .chefs-card-contanier {
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 880px) {
