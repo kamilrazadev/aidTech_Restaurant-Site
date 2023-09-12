@@ -1,3 +1,4 @@
+/* Nav Bar Styling */
 nav {
     position: sticky;
     top: 0;
@@ -38,6 +39,97 @@ nav {
     background-color: rgba(141, 7, 7);
     color: white;
 }
+
+/* Nav Responsive */
+
+.nav-toogle {
+    display: none;
+}
+
+.nav-links-responsive {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(165, 165, 165, 0.221);
+    backdrop-filter: blur(10px);
+    /* background-color: #ffffffa4; */
+    
+    color: white;
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition-duration: .5s;
+}
+
+.bars {
+    width: 80%;
+    height: 4px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+    width: 50%;
+}
+
+#checkbox:checked + .toggle .nav-links-responsive {
+    /* right: 0%; */
+
+    display: flex;
+    /* left: 0; */
+}
+
+#checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+    width: 80%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+    width: 80%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+
+/* Services Cards Section Styling */
 
 .services-card {
     display: flex;
@@ -262,6 +354,9 @@ footer {
 @media (max-width: 750px) {
     .nav-links {
         display: none;
+    }
+    .nav-toogle {
+        display: block;
     }
     .overlay-footer h3 {
         font-size: 15px;
