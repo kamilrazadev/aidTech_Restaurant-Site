@@ -49,18 +49,17 @@ nav {
 .nav-links-responsive {
     position: absolute;
     top: 50px;
-    left: 0;
+    right: 100%;
     z-index: 20;
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    /* backdrop-filter: blur(10px); */
+
     background-color: rgba(165, 165, 165, 0.221);
     backdrop-filter: blur(10px);
-    /* background-color: #ffffffa4; */
     
-    color: white;
+    transition: 500ms ease-out;
 }
 
 #checkbox {
@@ -95,11 +94,8 @@ nav {
     width: 50%;
 }
 
-#checkbox:checked + .toggle .nav-links-responsive {
-    /* right: 0%; */
-
-    display: flex;
-    /* left: 0; */
+#checkbox:checked + .toggle + .nav-links-responsive {
+    right: 0%;
 }
 
 #checkbox:checked + .toggle .bars {
